@@ -1,0 +1,111 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: "Raleway", sans-serif;
+  /* background: linear-gradient(
+    90deg,
+    rgba(140, 113, 197, 1) 0%,
+    rgba(106, 114, 189, 1) 50%,
+    rgba(86, 115, 184, 1) 100%
+  ); */
+  background: #000046;  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to right, #1CB5E0, #000046); 
+  background: linear-gradient(to right, #bfcfff, #809fff); 
+  
+}
+::selection{
+    color: #dfeeff;
+    background-color: #000046;
+}
+.game-header {
+  font-size: 5rem;
+  margin-bottom: 30px;
+  color: #000046;
+}
+.main-container {
+  width: 60vw;
+  height: 60vh;
+  display: flex;
+  border-radius: 1rem;
+  flex-direction: column;
+  gap: 3rem;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 0.4rem 3rem rgba(0, 0, 0, 0.1);
+  background: rgba(255, 255, 255, 0.12);
+}
+.main-container label {
+  font-size: 2rem;
+  color: #000c31;
+  font-weight: 600;
+  text-transform: capitalize;
+}
+.main-container input {
+  padding: 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  border: none;
+  outline: none;
+  background: #bfcfff;
+}
+.main-container button {
+  color: #dfeeff;
+  padding: 1rem 3rem;
+  border: 1px solid #406082;
+  background: #000c31;
+  border-radius: 0.5rem;
+  cursor: pointer;
+}
+.main-container button:disabled{
+    background-color: #406082;
+}
+
+#game-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.welcome-game {
+  font-size: 2.9rem;
+  font-weight: bold;
+  margin-bottom: 1.5rem;
+  text-transform: capitalize;
+  color: #000046;
+}
+.welcome-game span{
+    text-transform: uppercase;
+}
+#game-container p {
+  color: #000c31;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+.guess {
+  display: flex;
+  gap: 2rem;
+  margin: 4rem 4rem 2rem 4rem;
+  align-items: center;
+}
+#result {
+  font-size: 2rem !important;
+  color: rgba(255, 255, 255, 0.801);
+  margin-bottom: 3rem !important;
+}
+#result::nth-child(2) {
+    text-transform: uppercase;
+}
